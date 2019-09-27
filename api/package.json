@@ -1,0 +1,8 @@
+{
+	"name": "monorepo1-api",
+	"version": "1.0.0",
+	"private": true,
+	"devDependencies": {
+		"@now/node": "^1.0.0"
+	}
+}

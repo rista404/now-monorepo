@@ -1,0 +1,14 @@
+{
+	"version": 2,
+	"name": "monorepo1",
+	"routes": [
+		{ "src": "/blog/(.*)" },
+		{ "src": "/api/(.*)", "dest": "/api/$1.ts" },
+		{ "src": "/(.*)", "dest": "/www/$1" }
+	],
+	"builds": [
+		{ "src": "blog/package.json", "use": "@now/next" },
+		{ "src": "www/*", "use": "@now/static" },
+		{ "src": "api/*", "use": "@now/node" }
+	]
+}
